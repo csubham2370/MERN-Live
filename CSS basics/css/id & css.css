@@ -1,0 +1,23 @@
+p{
+  color: green;
+}
+
+#para3{
+
+  color: brown;
+}
+
+.code{
+
+  color: blue;
+}
+
+.article{
+
+  color: blueviolet;
+}
+/* Group selector  */
+h1,h2,h3{
+
+  color: blue;
+}
