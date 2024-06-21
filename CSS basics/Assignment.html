@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics Practice</title>
+    <link rel="stylesheet" href="css/Assignment.css">
+    <style>
+        /* Internal CSS */
+        #heading {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- Heading with text color red -->
+    <h1 style="color: red;">This is a heading</h1>
+
+    <!-- Div with id #heading demonstrating CSS priority -->
+    <div id="heading" style="color: blue;">This is a div with id 'heading'</div>
+
+    <!-- Div, paragraph, and heading using different selectors -->
+    <div class="content">
+        <h2 id="subheading">This is a subheading</h2>
+        <p>This is a paragraph inside the div with class 'content'.</p>
+    </div>
+
+    <!-- Two divs with ids first and second using group selector -->
+    <div id="first">First div</div>
+    <div id="second">Second div</div>
+</body>
+</html>

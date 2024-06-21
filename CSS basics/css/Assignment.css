@@ -1,0 +1,29 @@
+/* External CSS */
+#heading {
+  color: yellow; /* This will be overridden by inline style */
+}
+
+/* Add comments to CSS class */
+/* This class styles the content div */
+
+/* class selector */
+.content {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+/* Id selector */
+#subheading{
+
+  color: rgb(217, 0, 255);
+}
+
+/* Use of element selector */
+p {
+  font-size: 16px;
+}
+
+/* Group selector for first and second div */
+#first, #second {
+  color: purple;
+}
