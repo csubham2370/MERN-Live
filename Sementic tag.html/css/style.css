@@ -1,0 +1,35 @@
+header{
+
+  background-color: brown;
+}
+
+main{
+
+  background-color: rgb(138, 138, 224);
+}
+
+#first_section{
+
+  background-color: blanchedalmond;
+}
+
+#second_section{
+
+  background-color: rgb(25, 191, 209);
+}
+
+footer{
+
+  background-color: blueviolet;
+}
+
+
+h1{
+
+  font-size: 20px;
+}
+
+ span{
+
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
