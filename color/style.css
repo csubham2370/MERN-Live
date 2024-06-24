@@ -1,0 +1,55 @@
+/* #h1{
+
+  background-color: antiquewhite;
+
+}
+#h2{
+
+  background-color: brown;
+}
+#h3{
+
+  background-color: blue;
+}
+
+#h1{
+
+  background-color: rgb(red, green, blue);
+
+}
+#h2{
+
+  background-color: rgb(rgb(107, 21, 21), rgb(151, 31, 111), rgb(164, 20, 44));
+}
+#h3{
+
+  background-color: rgb(rgb(103, 6, 6), rgb(158, 191, 60), blue);
+} */
+
+
+/* #h1{
+
+  background-color: #f0f;
+
+} */
+#h2{
+
+  background-color: #ff0;
+}
+#h3{
+
+  background-color: #fff;
+} 
+
+
+#h1{
+
+  background-color: rgba(255,0,0,0.5)
+
+}
+.box{
+  height: 80px;
+  width: 80px;
+  background-color: rgb(14, 220, 110);
+  visibility: hidden;
+}
