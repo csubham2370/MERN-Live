@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header, footer, main, section, article, aside {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+header {
+  background: #f4f4f4;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.section-group {
+  display: flex;
+  gap: 20px;
+}
+
+.section-group section {
+  flex: 1;
+}
+
+footer {
+  text-align: center;
+  background: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.bar {
+  background-color: rgba(255, 0, 0, 0.5); /* red background with 50% opacity */
+  padding: 20px;
+  color: white; /* text color */
+  text-align: center;
+}
+
+.main-content {
+  color: blue; /* change text color of main content */
+}
+
+.background-image {
+  background-image: url('path/to/your/image.jpg'); /* replace with your image path */
+  background-size: cover;
+  background-position: center;
+  height: 200px; /* adjust height as needed */
+  color: white; /* text color for better readability */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shorthand-background {
+  background: url('path/to/your/image.jpg') no-repeat center center / cover, rgba(0, 0, 0, 0.5);
+  height: 200px; /* adjust height as needed */
+  color: white; /* text color for better readability */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
