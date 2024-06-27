@@ -1,0 +1,29 @@
+div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid dodgerblue;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  font-size: 30px;
+  border-radius: 2rem;
+}
+
+input{
+
+  padding: 7px;
+  margin: 16px;
+  border-radius: 2rem;
+}
+
+button{
+
+  font-size: 25px;
+  align-items: center;
+  color: blue;
+  border-radius: 2rem;
+  
+}
