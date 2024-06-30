@@ -1,0 +1,36 @@
+.div1{
+
+  height: 200px;
+  width: 200px;
+  background-color: brown;
+  
+}
+
+.div2{
+
+  padding-top: 10px;
+  padding-bottom: 25px;
+  margin: 100px;
+  border-radius: 2rem ;
+  border: 2px dotted red;
+
+
+}
+
+#box_one{
+  
+  height: 200px;
+  width: 200px;
+  box-sizing: border-box;
+  background-color: brown;
+  border: 5px solid black;
+}
+
+#box_two{
+  
+  height: 200px;
+  width: 200px;
+  box-sizing: border-box;
+  background-color: dodgerblue;
+  border: 8px solid black;
+}
