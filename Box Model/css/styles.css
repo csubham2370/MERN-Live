@@ -30,7 +30,7 @@
   
   height: 200px;
   width: 200px;
-  box-sizing: border-box;
+  box-sizing:content-box;
   background-color: dodgerblue;
   border: 8px solid black;
 }
