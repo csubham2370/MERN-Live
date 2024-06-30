@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Practice</title>
+    <style>
+        /* Task 1: Create a div with height and width 200px */
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: lightblue;
+        }
+
+        /* Task 2: Create a button with padding */
+        .button {
+            padding: 10px 15px;
+            background-color: lightcoral;
+            border: none;
+        }
+
+        /* Task 3: Add 100px margin to the button */
+        .button-margin {
+            margin: 100px;
+        }
+
+        /* Task 4: Add dotted border with color red to the button */
+        .button-border {
+            border: 5px dotted red;
+            border-radius: 50%;
+        }
+
+        /* Task 5: Create two boxes with different box-sizing values */
+        .box-content-box {
+            box-sizing: content-box;
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            border: 10px solid black;
+            background-color: lightgreen;
+        }
+
+        .box-border-box {
+            box-sizing: border-box;
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            border: 10px solid black;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Box Model Practice</h1>
+    
+    <!-- Task 1 -->
+    <div class="box"></div>
+    
+    <!-- Task 2 and 3 -->
+    <button class="button button-margin">Button with Margin</button>
+    
+    <!-- Task 4 -->
+    <button class="button button-border">Button with Border</button>
+    
+    <!-- Task 5 -->
+    <div class="box-content-box">Content Box</div>
+    <div class="box-border-box">Border Box</div>
+</body>
+</html>
