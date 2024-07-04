@@ -5,8 +5,8 @@
 
 .container{
   
-   height: 500px;
-   width: 500px;
+   height: 50%;
+   width: 80%;
    background-color: dodgerblue;
    display: flex;
    flex-direction: row;
@@ -16,9 +16,12 @@
 }
 
 body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+            width: auto;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(237, 237, 131);
 }
 
 .box{
