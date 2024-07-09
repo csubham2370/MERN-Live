@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Media Query</title>
+  <style>
+    .screen{
+      display: block;
+      background-color: rgb(94, 94, 208);
+    }
+    .print{
+      display: none;
+    }
+    @media print{
+      .screen{
+        display: none;
+      }
+      .print{
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="screen">This is visible on screen</div>
+  <div class="print">This is visible on print</div>
+</body>
+</html>
