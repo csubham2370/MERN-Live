@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Transition</title>
+  <style>
+
+    body{
+      width: auto;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      align-content: center;
+
+    }
+    .box{
+
+      height: 100px;
+      width:  100px;
+      background-color: aquamarine;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      border: 3px solid black;
+      box-sizing: border-box;
+    
+
+      /* Transition */
+      /* transition-property: all;
+      transition-duration: 10s;
+      transition-timing-function: linear; */
+      /* short cut */
+      transition: all 1s;
+     
+      
+
+      
+    }
+
+    .box:hover{
+      width: 200px;
+      background-color: blueviolet;
+      /* transform: rotate(360deg); */
+      /* transform: rotatex(360deg); */
+      /* transform: scale(8) */
+      /* transform: translate(100px, 100px); */
+      transform: skew(45deg);
+
+    }
+  </style>
+</head>
+<body>
+  <div class="box">My box</div>
+</body>
+</html>
