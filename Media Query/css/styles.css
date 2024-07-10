@@ -1,0 +1,57 @@
+/* Basic Media Query */
+@media (max-width: 600px) {
+  body {
+      background-color: lightblue;
+  }
+}
+
+/* Min-Width Media Query */
+@media (min-width: 600px) {
+  header {
+      background-color: darkblue;
+      color: white;
+  }
+}
+
+/* Max-Width Media Query */
+@media (max-width: 800px) {
+  header h1 {
+      font-size: 1.2em;
+  }
+}
+
+/* Orientation Media Query */
+@media (orientation: landscape) {
+  .projects {
+      background-color: lightgreen;
+  }
+}
+
+/* Min-Height Media Query */
+@media (min-height: 400px) {
+  .intro {
+      padding: 20px;
+  }
+}
+
+/* Combination Media Query */
+@media (min-width: 600px) and (max-width: 1200px) {
+  .project {
+      border: 2px solid black;
+      padding: 10px;
+  }
+}
+
+/* Different Media Types */
+@media print {
+  body {
+      font-size: 12pt;
+  }
+}
+
+/* Min-Resolution Media Query */
+@media (min-resolution: 2dppx) {
+  body {
+      font-size: 1.5em;
+  }
+}
