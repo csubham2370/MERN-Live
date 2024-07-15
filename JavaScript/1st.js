@@ -1,1 +1,1 @@
-console.log("Our first Js code.")
+console.log("Our first Js code.");
