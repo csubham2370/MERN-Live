@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Advanced Grid Layout</title>
+<style>
+.grid-container{
+  display: grid;
+  grid-template-areas: 
+  "item1 item1 item2"
+  "item3 item4 item4"
+  "item5 item5 item6";
+  gap: 15px;
+  height: 100vh;
+  width: 100%;
+
+}
+.item1{
+  grid-area: item1;
+}
+.item2{
+  grid-area: item2;
+}
+.item3{
+  grid-area: item3;
+}
+.item4{
+  grid-area: item4;
+}
+.item5{
+  grid-area: item5;
+}
+.item6{
+  grid-area: item6;
+}
+.grid-item{
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+  overflow: auto;
+}
+.item1 {
+grid-column: 1 / span 2;
+}
+.item2 {
+grid-column: 3 / span 1;
+grid-row: 1 / span 2;
+}
+.item3 {
+grid-row: 2 / span 1;
+}
+.item4 {
+grid-column: 2 / span 2;
+grid-row: 2 / span 2;
+}
+.item5 {
+grid-column: 1 / span 2;
+grid-row: 3 / span 1;
+}
+.item6 {
+grid-column: 3 / span 1;
+grid-row: 3 / span 1;
+}
+
+</style>
+</head>
+<body>
+<div class="grid-container">
+<div class="grid-item item1">Item 1</div>
+<div class="grid-item item2">Item 2</div>
+<div class="grid-item item3">Item 3</div>
+<div class="grid-item item4">Item 4</div>
+<div class="grid-item item5">Item 5</div>
+<div class="grid-item item6">Item 6</div>
+</div>
+</body>
+</html>

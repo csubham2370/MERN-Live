@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Grid Template Example</title>
+
+  <style>
+    .grid-container{
+
+      display: grid;
+      /* grid-template-rows: 100px 100px ; */
+      /* grid-template-columns: 100px 100px 100px;
+      grid-auto-flow: row;
+      grid-auto-flow: column; */
+      /* grid-template-columns: 1fr 2fr 1fr; */
+      /* grid-template-columns: 100px minmax(150px,1fr) 100px; */
+      /* grid-template-rows: repeat(2,100px);
+      grid-template-columns: repeat(3,1fr); */
+      grid-template-columns: repeat(auto-fit,minmax(150px, 2fr));
+      /* grid-template-rows: repeat(auto-fit,minmax(150px, 2fr)); */
+      
+      gap: 10px;
+
+    }
+
+    .grid-item{
+
+      background-color: aqua;
+      border: 1px solid black;
+      text-align: center;
+      padding: 20px;
+      font-size: 1.5em;
+    }
+
+ 
+
+
+
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item item1">1</div>
+    <div class="grid-item item2">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+    
+    
+    
+    
+</body>
+</html>
