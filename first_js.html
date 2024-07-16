@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Basic JavaScript Example</title>
+  <script>
+    console.log('Hello World')
+    function clickme(){
+      // console.log('Button clicked.')
+      document.getElementById('para').innerHTML='This is new paragraph.'
+      
+
+    }
+    function styleme(){
+      document.getElementById('para').style.color = 'red'
+    }
+  </script>
+</head>
+<body>
+  <h1>Welcome to Js World.</h1>
+  <p id="para">this is a demo paragraph</p>
+  <button onclick="clickme()">change me</button>
+  
+  <button onclick="styleme()">style me</button>
+</body>
+</html>
