@@ -1,11 +1,10 @@
-document.addEventListener("DOMContentLoaded", function() {
+
     alert("Welcome to the page!");
 
-    document.getElementById("addToBag").addEventListener("click", function() {
+ function addToBag() {
         alert("Added to Bag!");
-    });
+    }
 
-    document.getElementById("wishlist").addEventListener("click", function() {
+ function wishlist() {
         alert("Added to Wishlist!");
-    });
-});
+    }

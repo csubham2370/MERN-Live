@@ -16,6 +16,7 @@ button {
 #wishlist {
   background-color: white;
   color: red;
+  text-transform: uppercase;
 }
 
 
