@@ -1,0 +1,71 @@
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+#addToBag {
+  background-color: lightgreen;
+  border: 2px solid green;
+}
+
+#wishlist {
+  background-color: white;
+  color: red;
+}
+
+
+.container{
+  height: 530px;
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 2px solid black;
+  border-radius: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .items{
+  height: 60px;
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+
+.container .para{
+
+  height: 40px;
+  width: 460px;
+  display: flex;
+  flex-direction: row;
+ 
+  flex-wrap: wrap;
+
+  
+}
+p{
+  color: rgb(203, 55, 55);
+  font-size: 17px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+;
+}
+
+body{
+  width: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
