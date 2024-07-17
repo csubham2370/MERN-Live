@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra Cart</title>
+</head>
+<body>
+    <script>
+        // Task 1
+        const dalPrice = 100;
+        const rotiPrice = 10;
+        const iceCreamPrice = 30;
+        const rotiQuantity = 2;
+        const totalBill = dalPrice + (rotiPrice * rotiQuantity) + iceCreamPrice;
+        console.log(`Total bill amount: ₹${totalBill}`);
+
+        // Task 2
+        const iPhonePrice = 79990;
+        const airPodsPrice = 24990;
+        const airPodsQuantity = 2;
+        const totalPrice = iPhonePrice + (airPodsPrice * airPodsQuantity);
+        const gstRate = 0.18;
+        const gstAmount = totalPrice * gstRate;
+        console.log(`GST Amount: ₹${gstAmount}`);
+
+        // Task 3
+        const string1 = 'This is a string using single quotes.';
+        const string2 = "This is a string using double quotes.";
+        const string3 = `This is a string using template literals.`;
+        console.log(string1);
+        console.log(string2);
+        console.log(string3);
+
+        // Task 4
+        const str1 = "Total amount is ";
+        const amount = 500;
+        const combinedString = str1 + amount;
+        console.log(combinedString);
+
+        // Task 5
+        const cartItems = [
+            { item: "T-Shirt", price: 500, quantity: 2 },
+            { item: "Jeans", price: 1500, quantity: 1 },
+            { item: "Sneakers", price: 3000, quantity: 1 }
+        ];
+
+        let totalAmount = 0;
+        cartItems.forEach(item => {
+            totalAmount += item.price * item.quantity;
+        });
+
+        let orderSummary = "Order Summary:\n";
+        cartItems.forEach(item => {
+            orderSummary += `${item.quantity} x ${item.item} @ ₹${item.price} each\n`;
+        });
+        orderSummary += `Total Amount: ₹${totalAmount}`;
+
+        console.log(orderSummary);
+
+        // Task 6
+        alert(orderSummary);
+    </script>
+</body>
+</html>
