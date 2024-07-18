@@ -1,0 +1,50 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.container{
+  height: 122px;
+  width: 650px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 2rem;
+  flex-wrap: wrap;
+
+  
+
+}
+#add-to-bag{
+
+  border-radius: 1rem;
+  background-color: rgb(135, 231, 149);
+  width: 175px;
+  margin-right: -36px;
+  
+}
+#move-to-wishlist{
+  width: 251px;
+  border-radius: 1rem;
+  border: 3px solid black;
+  text-transform: uppercase;
+ 
+}
+#buy-one-get-one{
+
+  border-radius: 1rem;
+  background-color: rgb(135, 231, 149);
+  margin-left: -37px;
+  width: 175px;
+}
+
+.h1{
+
+
+  width: 606px;
+}
