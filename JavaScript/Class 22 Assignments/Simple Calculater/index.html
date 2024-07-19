@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Simple Calculater</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="display"></div>
+    <br>
+    <button class="cal" onclick="
+    number = '';
+    document.querySelector('.display').innerText = number;
+    ">C</button>
+    <button class="cal" onclick="
+    number += '1'
+    document.querySelector('.display').innerText = number">1</button>
+    <button class="cal" onclick="
+    number += '2'
+    document.querySelector('.display').innerText = number">2</button>
+    <button class="cal" onclick="
+    number += '+'
+    document.querySelector('.display').innerText = number">+</button>
+    <button class="cal" onclick="
+    number += '3'
+    document.querySelector('.display').innerText = number">3</button>
+    <button class="cal" onclick="
+    number += '4'
+    document.querySelector('.display').innerText = number">4</button>
+    <button class="cal" onclick="
+    number += '-'
+    document.querySelector('.display').innerText = number">-</button>
+    <button class="cal" onclick="
+    number += '5'
+    document.querySelector('.display').innerText = number">5</button>
+    <button class="cal" onclick="
+    number += '6'
+    document.querySelector('.display').innerText = number">6</button>
+    <button class="cal" onclick="
+    number += '*'
+    document.querySelector('.display').innerText = number">*</button>
+    <button class="cal" onclick="
+    number += '7'
+    document.querySelector('.display').innerText = number">7</button>
+    <button class="cal" onclick="
+    number += '8'
+    document.querySelector('.display').innerText = number">8</button>
+    <button class="cal" onclick="
+    number += '/'
+    document.querySelector('.display').innerText = number">/</button>
+    <button class="cal" onclick="
+    number = eval(number)
+    document.querySelector('.display').innerText = number">=</button>
+    <button class="cal" onclick="
+    number += '9'
+    document.querySelector('.display').innerText = number">9</button>
+    <button class="cal" onclick="
+    number += '0'
+    document.querySelector('.display').innerText = number">0</button>
+    <button class="cal" onclick="
+    number += '.'
+    document.querySelector('.display').innerText = number">.</button>
+  </div>
+  <script>
+    let number = '';
+  </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 2px solid rgb(184, 180, 180);
+  height: 531px;
+  width: 244px;
+  flex-wrap: wrap;
+  padding: 27px;
+  padding-top: 10px;
+  border-radius: 12px;
+}
+
+.display{
+
+  height: 72px;
+  width: 400px;
+  font-size: 64px;
+  padding: 2px;
+  display: flex;
+  flex-direction: row-reverse;
+  
+  border: 2px solid rgb(100, 99, 99);
+  margin-bottom: 6px;
+  border-radius: 5px;
+
+}
+
+.cal{
+  height: 66px;
+  width: 66px;
+  padding: 10px;
+  margin: 5px;
+}
