@@ -18,7 +18,7 @@ console.log(age > 47 + 34);
 
 age = 40;
 console.log('Program Start')
-if ( age >= 18){
+if age >= 18{
   console.log("You are an adult.");
 }
 else{
