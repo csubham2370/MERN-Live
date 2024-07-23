@@ -1,0 +1,60 @@
+body{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 295px;
+  width: 500px;
+  border-radius: 2rem;
+  padding: 20px 20px 20px 5px;
+  border: 2px solid black;
+
+
+
+}
+.subbox{
+
+
+  display: flex;
+  flex-direction: row;
+  height: 34px;
+
+
+}
+.but{
+ border-radius: 0.5rem;
+ background-color: #408643;
+ color: aliceblue;
+ font-size: 15px;
+ margin-right: 10px;
+ height: 45px;
+ width: 120px;
+ 
+
+}
+
+#user{
+  margin-top: 24px;
+  font-weight: bold;
+}
+
+#com{
+  margin-top: 6px;
+  font-weight: bold;
+}
+
+#res{
+  margin-top: 6px;
+  font-weight: bold;
+}
+button:active{
+  background-color: red;
+}

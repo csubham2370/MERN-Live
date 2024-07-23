@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>RockPaperScissor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="box">
+    <h1>Rock Paper Scissor Game</h1>
+    <p>Click on the following to play the game:</p>
+    <div class="subbox">
+      <button class="but"
+      onclick="
+      let userselect = 'User select Rock';
+      
+      let computerSelect = Math.floor(Math.random() * 4);
+      
+      if (computerSelect >= 0 && computerSelect <= 1){
+         computerSelect = 'Rock';
+      } 
+      else if(computerSelect > 1 && computerSelect <= 2){
+         computerSelect = 'Paper';
+      }
+      else if (computerSelect > 2 && computerSelect <=3){
+        computerSelect = 'Scissor';
+
+      }
+      let result ;
+      if ( computerSelect == 'Scissor'){
+          result = 'You win.'
+      }
+      else if(computerSelect == 'Paper'){
+        result = 'Computer win.'
+      }
+      else if(computerSelect == 'Rock'){
+        result = `It's Tie.`;
+      }
+      console.log(`${userselect} and 'Computer select' ${computerSelect} \n ${result}`);
+      document.getElementById('user').innerText = `${userselect}`;
+      document.getElementById('com').innerText = ` Computer selected ${computerSelect}`;
+      document.getElementById('res').innerText = `${result}`;
+           ">👊Rock</button>
+      <button class="but" onclick="
+      let userselect = 'User select Paper';
+      
+      let computerSelect = Math.floor(Math.random() * 4);
+      
+      if (computerSelect >= 0 && computerSelect <= 1){
+         computerSelect = 'Rock';
+      } 
+      else if(computerSelect > 1 && computerSelect <= 2){
+         computerSelect = 'Paper';
+      }
+      else if (computerSelect > 2 && computerSelect <=3){
+        computerSelect = 'Scissor';
+
+      }
+      let result ;
+      if ( computerSelect == 'Rock'){
+          result = 'You win.'
+      }
+      else if(computerSelect == 'Scissor'){
+        result = 'Computer win.'
+      }
+      else if(computerSelect == 'Paper'){
+        result = `It's Tie.`;
+      }
+      console.log(`${userselect} and 'Computer select' ${computerSelect} \n ${result}`);
+      document.getElementById('user').innerText = `${userselect}`;
+      document.getElementById('com').innerText = ` Computer selected ${computerSelect}`;
+      document.getElementById('res').innerText = `${result}`;
+           ">🖐️Paper</button>
+      <button class="but" onclick="
+      let userselect = 'User select Scissor';
+      
+      let computerSelect = Math.floor(Math.random() * 4);
+      
+      if (computerSelect >= 0 && computerSelect <= 1){
+         computerSelect = 'Rock';
+      } 
+      else if(computerSelect > 1 && computerSelect <= 2){
+         computerSelect = 'Paper';
+      }
+      else if (computerSelect > 2 && computerSelect <=3){
+        computerSelect = 'Scissor';
+
+      }
+      let result ;
+      if ( computerSelect == 'Paper'){
+          result = 'You win.'
+      }
+      else if(computerSelect == 'Rock'){
+        result = 'Computer win.'
+      }
+      else if(computerSelect == 'Scissor'){
+        result = `It's Tie.`;
+      }
+      console.log(`${userselect} and 'Computer select' ${computerSelect} \n ${result}`);
+      document.getElementById('user').innerText = `${userselect}`;
+      document.getElementById('com').innerText = ` Computer selected ${computerSelect}`;
+      document.getElementById('res').innerText = `${result}`;
+          ">✌️Scissor</button>
+      
+    </div>
+    <p id="user"></p>
+      <p id="com"></p>
+      <p id="res"></p>
+  </div>
+</body>
+</html>

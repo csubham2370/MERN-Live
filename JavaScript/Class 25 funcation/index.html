@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>RockPaperScissor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="box">
+    <h1>Rock Paper Scissor Game</h1>
+    <p>Click on the following to play the game:</p>
+    <div class="subbox">
+      <button class="but"
+      onclick="
+        let value ='Rock👊';
+        User(value)
+        ">👊Rock</button>
+
+      <button class="but"  onclick="
+       value ='Paper🖐️';
+        User(value)
+    
+      
+      
+     ">🖐️Paper</button>
+      <button class="but" onclick="let 
+      value ='Scissor✌️';
+        User(value)
+      
+      
+      ">✌️Scissor</button>
+      
+    </div>
+    <p id="user"></p>
+      <p id="com"></p>
+      <p id="res"></p>
+  </div>
+
+  <script>
+
+    function User(value){
+      let userChoice = `${value}`;
+      let computerSelect = Math.floor(Math.random() * 4);
+      let res;
+
+      if (computerSelect >= 0 && computerSelect <= 1){
+         computerSelect = 'Rock👊';
+      } 
+      else if(computerSelect > 1 && computerSelect <= 2){
+         computerSelect = 'Paper🖐️';
+      }
+      else if (computerSelect > 2 && computerSelect <=3){
+        computerSelect = 'Scissor✌️';
+      }
+    console.log(userChoice);
+    console.log(computerSelect);
+
+    if (computerSelect === userChoice) {
+        res = `It's a Tie!❌`;
+    } else if (computerSelect === 'Rock👊' && userChoice === 'Scissor✌️') {
+        res = `Sorry, you lost. Try again!😣`;
+    } else if (computerSelect === 'Paper🖐️' && userChoice === 'Rock👊') {
+        res = `Sorry, you lost. Try again!😣`;
+    } else if (computerSelect === 'Scissor✌️' && userChoice === 'Paper🖐️') {
+        res = `Sorry, you lost. Try again!😣`;
+    } 
+    else{
+      res =  `You win !😁`;
+    }
+      document.getElementById('user').innerText = ` Your choice ${userChoice}`;
+      document.getElementById('com').innerText = ` Computer has chosen ${computerSelect}`;
+      document.getElementById('res').innerText = `${res}`;
+    }
+
+  </script>
+</body>
+</html>
+
+          
