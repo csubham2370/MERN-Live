@@ -27,3 +27,26 @@ console.log(jsonObject.city);
 
 console.log(jsonObject.skils.join(","));
 
+localStorage.setItem('name','Subham');
+localStorage.setItem('age','24');
+localStorage.setItem('city','Asansol');
+
+const name = localStorage.getItem('name');
+
+const age = localStorage.getItem('age');
+
+const city = localStorage.getItem('city');
+
+console.log('Name:',name);
+console.log('age:',age);
+console.log('City:',city);
+
+localStorage.removeItem('age');
+
+const removedAge = localStorage.getItem('age');
+console.log('Age is:',removedAge);
+
+localStorage.clear();
+
+const clearedName = localStorage.getItem('name');
+console.log('Name is:',clearedName);
