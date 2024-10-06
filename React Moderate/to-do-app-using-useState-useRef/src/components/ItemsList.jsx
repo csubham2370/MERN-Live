@@ -1,29 +1,18 @@
 
-
+import List from "./List";
 const ItemList = () =>{
 
-  const todoItems = 
-    { name: "Buy Milk", date: "22/08/2024" }
-   
-  ;
-  console.log(todoItems.name)
-
-  // const todoItems = ['1','2','3']
+  const List =[{name: "Goto School", date: "12/10/2024"},{name: "Goto Gym", date: "12/10/2024"},{name: "Goto Home", date: "12/10/2024"}]
 
   return (<>
 
 <div className=" flex ">
+{List.map(li =>(
 
-<div className="bg-slate-200 px-4 py-2 mx-2 my-1 border-solid border-2 border-black h-10 w-[13.5rem] text-black">{todoItems.name}
-
-</div>
-
-<div className="bg-slate-200 px-4 py-2 mx-0 my-1 border-solid border-2 border-black h-10 w-[10.9rem] text-black">{todoItems.name}
-
-</div>
-<button className="bg-red-500 m-1 ml-2 pr-1.5 p-2 font-bold rounded-sm">Delete</button>
+<List  itemName={li.name} itemDate={li.date}/>
 
 
+))}
 
 </div>
 
