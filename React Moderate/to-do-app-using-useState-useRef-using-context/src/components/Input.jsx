@@ -1,10 +1,10 @@
-import { useRef, useState } from "react";
-
-const Input = ({ addTodoItem }) => {
+import { useContext, useRef, useState } from "react";
+import {TodoItemsContext}  from "../data/TodoItemContext"
+const Input = () => {
   const todoTextInput = useRef();
   const todoDateInput = useRef();
   const [isButtonDisabled, setIsButtonDisabled] = useState(true);
-
+    const {addTodoItem} = useContext(TodoItemsContext)
   const addHandler = () => {
     const todoText = todoTextInput.current.value;
     const todoDate = todoDateInput.current.value;

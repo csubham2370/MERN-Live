@@ -1,7 +1,9 @@
-const Items = ({id, itemName, itemDate, deleteItems }) => {
+import { useContext } from "react";
+import {TodoItemsContext}  from "../data/TodoItemContext"
+const Items = ({id, itemName, itemDate }) => {
 
 
-
+      const {deleteItems} = useContext(TodoItemsContext)
   return (
     <>
       <div className=" flex ">
