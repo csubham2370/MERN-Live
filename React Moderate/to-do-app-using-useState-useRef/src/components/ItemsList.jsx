@@ -1,15 +1,14 @@
 
-import List from "./List";
-const ItemList = () =>{
+import Items from "./Items";
+const ItemList = ({  todoItems,deleteItems}) =>{
 
-  const List =[{name: "Goto School", date: "12/10/2024"},{name: "Goto Gym", date: "12/10/2024"},{name: "Goto Home", date: "12/10/2024"}]
-
+ 
   return (<>
 
-<div className=" flex ">
-{List.map(li =>(
+<div className=" flex flex-col">
+{todoItems.map((li) =>(
 
-<List  itemName={li.name} itemDate={li.date}/>
+<Items key={li.id}  id={li.id} itemName={li.name} itemDate={li.date} deleteItems={deleteItems}/>
 
 
 ))}
