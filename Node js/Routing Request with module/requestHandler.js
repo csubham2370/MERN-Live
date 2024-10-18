@@ -1,6 +1,7 @@
-const http = require('http')
+
 
 const fs = require('fs')
+const {URLSearchParams} = require('url');
 
 const  requestHandler = (req,res) =>{
 
@@ -51,35 +52,28 @@ else if (req.url === '/buy-product') {
     req.on('end', () => {
       const body = Buffer.concat(arr).toString();
       console.log(body);
-      
-      const urlParms = new URLSearchParams(body);
+  
+      const urlParams = new URLSearchParams(body);
       const bodyJson = {};
-      
-      for (const [key, value] of urlParms.entries()) {
+  
+      for (const [key, value] of urlParams.entries()) {
           bodyJson[key] = value;
       }
-      
+  
       console.log(bodyJson);
-      // const jsonStringfy = JSON.stringify(bodyJson);
-      
-      // Correct usage of writeFileSync
-      fs.writeFile('buy.txt', JSON.stringify(bodyJson), (err) => {
-        res.statusCode = 302;
-        res.setHeader('Location', '/products');
-        res.end();
-        console.log('Sending Response');
-      });
-      
-  });
+      const jsonStringfy = JSON.stringify(bodyJson);
   
-
+      // Use fs.writeFile correctly with error handling and ensure res.end() is called only once
+      fs.writeFile('buy.txt', jsonStringfy, (err) => {
+        // Regardless of whether there's an error or not, send the response after file write completes
+        res.statusCode = 302;  // Set redirection status
+        res.setHeader('Location', '/product');  // Redirect to '/product'
+        res.end();  // End the response
+        console.log('File written and response sent');
+    });
+    
   
-  
-  
-
- 
-  
-}
+})}
 
 
 
@@ -102,8 +96,9 @@ else if(req.url === "/product"){
 }
 else{
   res.write('<h1>404 not found</h1>')
+  res.end()
 }
-res.end()
+
 }
 
 module.exports = requestHandler;
