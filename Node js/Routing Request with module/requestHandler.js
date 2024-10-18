@@ -2,8 +2,6 @@ const http = require('http')
 
 const fs = require('fs')
 
-console.log('Hello')
-
 const  requestHandler = (req,res) =>{
 
   console.log('Request Received',req.url, req.method)
@@ -62,16 +60,21 @@ else if (req.url === '/buy-product') {
       }
       
       console.log(bodyJson);
-      const jsonStringfy = JSON.stringify(bodyJson);
+      // const jsonStringfy = JSON.stringify(bodyJson);
       
       // Correct usage of writeFileSync
-      fs.writeFileSync('buy.txt', jsonStringfy);
+      fs.writeFile('buy.txt', JSON.stringify(bodyJson), (err) => {
+        res.statusCode = 302;
+        res.setHeader('Location', '/products');
+        res.end();
+        console.log('Sending Response');
+      });
+      
   });
   
 
   
-  res.statusCode = 302;
-  res.setHeader('Location', '/product');
+  
   
 
  
@@ -103,9 +106,4 @@ else{
 res.end()
 }
 
-const server = http.createServer(requestHandler);
-
-const PORT = 3002;
-server.listen(PORT, ()=>{
-  console.log(`Server running at: http://localhost:${PORT}/`)
-})
+module.exports = requestHandler;
