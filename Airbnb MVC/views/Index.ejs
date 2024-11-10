@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('partials/head') %>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navigation Bar -->
+    <%- include('partials/nav') %>
+
+    <!-- Main Content -->
+    <main class="container mx-auto py-8">
+      <!-- Welcome Message -->
+      <div class="container mx-auto py-4">
+        <h1 class="text-3xl font-bold text-center text-green-800">Welcome to Sc Airbnb</h1>
+      </div>
+
+      <!-- Homes List -->
+      <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <% homes.forEach(home => { %>
+          <div class="bg-white shadow-md p-6 rounded-lg">
+            <!-- Image -->
+            <div class="mb-4">
+              <img src="<%= home.photoUrl %>" alt="<%= home.homeName %> Image"
+                   class="w-full h-48 object-cover rounded-t-md">
+            </div>
+            <!-- Details -->
+            <div class="space-y-2">
+              <h2 class="text-2xl font-bold text-gray-800"><%= home.homeName %></h2>
+              <p class="text-gray-600"><span class="font-semibold">Location:</span> <%= home.location %></p>
+              <p class="text-gray-600"><span class="font-semibold">Price:</span> $<%= home.price %> / night</p>
+              <p class="text-gray-600"><span class="font-semibold">Rating:</span> <%= home.rating %> ⭐</p>
+            </div>
+          </div>
+        <% }); %>
+      </div>
+    </main>
+  </body>
+</html>

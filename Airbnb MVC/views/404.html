@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/output.css">
+  <title>Add Home</title>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+  <div class="bg-white shadow-md rounded-lg p-8 w-full max-w-md text-center">
+    <h1 class="text-3xl font-bold text-gray-800 mb-6">Add Your Home</h1>
+    <form action="/host/add-home" method="post" class="space-y-4">
+      <div>
+        <label for="homeName" class="block text-gray-700 font-semibold mb-2">Home Name</label>
+        <input type="text" id="homeName" name="homeName" required 
+               class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+      </div>
+      <input type="submit" value="Add Home" 
+             class="w-full bg-indigo-600 text-white font-semibold p-3 rounded-lg hover:bg-indigo-700 cursor-pointer transition duration-200">
+    </form>
+  </div>
+</body>
+</html>

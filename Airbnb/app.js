@@ -1,0 +1,32 @@
+
+const path = require('path')
+const express = require('express');
+const bodyParser = require('body-parser');
+
+
+const app = express();
+
+const hostrouter = require('./routers/hostrouter');
+const storeRouter = require('./routers/storeRouter');
+
+const rootDir = require('./path/path-utils')
+
+app.use(express.static(path.join(rootDir, "public")));
+app.use(bodyParser.urlencoded({extended:true}));
+
+app.use(storeRouter);
+app.use('/host',hostrouter)
+
+
+
+app.use((req, res, next) =>{
+
+  res.statusCode = 404;
+res.sendFile(path.join(__dirname, "views", "404.html"));
+})
+
+const PORT = 3000;
+
+app.listen(PORT, () =>{
+  console.log(`The server is running on http://localhost:${PORT}`)
+});
