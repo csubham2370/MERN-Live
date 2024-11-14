@@ -1,10 +1,4 @@
 
-const fs = require('fs');
-const path = require('path');
-const rootDir = require('../path/path-utils')
-
-const homeFilePath = path.join(rootDir, 'data', 'home.json' )
-const home = [];
 
 module.exports = class Home {
 
