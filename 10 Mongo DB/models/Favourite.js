@@ -20,12 +20,16 @@ module.exports = class Favourite {
   }
 
   static fetchAll() {
+
     const db = getDb();
     return db.collection('favourites').find().toArray();
+    
   }
 
   static deleteById(homeId) {
+
     const db = getDb();
     return db.collection('favourites').deleteOne({homeId});
+   
   }
 }

@@ -18,8 +18,11 @@ module.exports = class Home {
   save() {
     const db = getDb();
     if (this._id) { // update
+      console.log('Update done...')
       return db.collection("homes").updateOne({_id: this._id}, {$set: this});
+      
     } else { // insert
+      console.log('insert done...')
       return db.collection("homes").insertOne(this);
     }
   }
