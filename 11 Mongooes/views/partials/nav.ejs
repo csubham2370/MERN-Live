@@ -4,9 +4,11 @@
       <a href="/" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-md">
         airbnb
       </a>
-      <a href="/homes" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-md">
-        Homes
-      </a>
+      
+      <% if(isLoggedIn) { %>
+        <a href="/homes" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-md">
+          Homes
+        </a>
       <a href="/favourites" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-md">
         Favourites
       </a>
@@ -15,6 +17,10 @@
       </a>
       <a href="/host/add-home" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-md">
         Add Home
+      </a>
+      <% } %>
+      <a href="/login" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-md">Login
+        
       </a>
     </div>
   </nav>

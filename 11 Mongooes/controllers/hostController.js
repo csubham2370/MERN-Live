@@ -2,7 +2,7 @@ const { model } = require("mongoose");
 const Home = require("../models/Home");
 
 exports.getAddHome = (req, res, next) => {
-  res.render("host/edit-home", { editing: false, pageTitle: "Host Your Home" });
+  res.render("host/edit-home", { editing: false, pageTitle: "Host Your Home" ,isLoggedIn: req.isLoggedIn});
 };
 
 exports.getEditHome = (req, res, next) => {
@@ -23,7 +23,7 @@ exports.getEditHome = (req, res, next) => {
     res.render("host/edit-home", {
       home: home,
       editing: editing,
-      pageTitle: "Edit Your Home",
+      pageTitle: "Edit Your Home",isLoggedIn: req.isLoggedIn
     });
   });
 };
@@ -71,7 +71,7 @@ exports.getHostHomes = (req, res, next) => {
   Home.find().then(registeredHomes => {
     res.render("host/host-homes", {
       homes: registeredHomes,
-      pageTitle: "Host Homes",
+      pageTitle: "Host Homes",isLoggedIn: req.isLoggedIn
     });
   });
 };
